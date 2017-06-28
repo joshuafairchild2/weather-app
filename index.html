@@ -9,13 +9,17 @@
     <title>Weather-o-matic</title>
   </head>
   <body>
-    <form id='name-form'>
-      <div class="form-group">
-        <label>Name:</label>
-        <input type="text" id="input" class="form-control">
+    <div class="container">
+      <form id='city-form'>
+        <div class="form-group">
+          <label>Enter a city (and country ISO code) to get weather information for:</label>
+          <input type="text" class='form-control' id='city-input' placeholder="Ex. Portland, OR">
+        </div>
+        <button type="submit" class="btn btn-primary">Get weather</button>
+      </form>
+      <div id="output-area">
+        <h3 id='humidity'></h3>
       </div>
-      <button class='btn' type="submit">Enter</button>
-    </form>
-    <h1 id='output'></h1>
-  </body>
+    </body>
+  </div>
 </html>
